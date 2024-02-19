@@ -15,7 +15,7 @@ export function Register() {
         onClick={() => navigate('/')}
       />
       <Container>
-        <div className="w-full h-screen flex flex-col  items-center justify-center lign-middle p-8">
+        <div className="w-full h-screen flex flex-col  items-center justify-center lign-middle p-8 border border-gray-400">
           <div className="bg-blue-600 w-24 h-24 rounded-full flex items-center justify-center">
             <FaUser size={60} color="#fff" />
           </div>
