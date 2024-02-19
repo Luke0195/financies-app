@@ -1,3 +1,4 @@
+import { Home } from '../../pages/Home'
 export function App() {
-  return <h1 className="text-red-600"> Financies App</h1>;
+  return <Home />
 }
