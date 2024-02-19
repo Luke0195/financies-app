@@ -1,5 +1,6 @@
 import { Header, Container } from '../../components'
 import { DataGrid, GridColDef, GridValueGetterParams } from '@mui/x-data-grid'
+import { useNavigate } from 'react-router-dom'
 
 const columns: GridColDef[] = [
   { field: 'id', headerName: 'ID', width: 70 },
@@ -35,13 +36,16 @@ const rows = [
 ]
 
 export function Home() {
+  const navigate = useNavigate()
   return (
     <div>
       <Header />
       <Container>
         <div className="flex items-center justify-between my-5 bg-blue-700 p-2">
           <h2 className="text-white font-semibold text-lg"> Resultado </h2>
-          <button className="bg-slate-400 p-2 text-white rounded-md ">
+          <button
+            className="bg-slate-400 p-2 text-white rounded-md "
+            onClick={() => navigate('/register')}>
             {' '}
             Cadastrar Novo +{' '}
           </button>
